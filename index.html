@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>🦈Dreamy</h1>
+        <ul id="menu-links">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>About Us</li>
+        </ul>
+        <button class="nav-btn">Get started <img src="images/arrow-white.png" alt="image"></button>
+
+
+        <img src="images/menu.png" alt="" class="menu-icon" onclick="toogleMenu()">
+    </nav>
+
+    <div class="header">
+       <div class="header-content">
+        <h1><span>FREE</span><br><span>LANCER</span></h1>
+        <div class="btn-container">
+            <button class="btn-dark">Request call back <img src="images/phone.png" alt="image"></button>
+            <button class="btn-light">Know more <img src="images/arrow-black.png" alt="image"></button>
+        </div>
+        <p>Passionate UI designers with 1+ years of experience</p>
+       </div>
+
+        <img src="images/user.png" alt="" class="user-img">
+    </div>
+    <script>
+        let navbar = document.querySelector("nav");
+        let menuLinks = document.getElementById("menu-links")
+
+
+        function toogleMenu(){
+            menuLinks.classList.toggle('show-menu')
+        }
+
+
+
+
+        window.onscroll = function(){
+            if(window.scrollY > 0){
+                navbar.style.background = '#eefff9';
+            }else{
+                navbar.style.background = 'transparent';
+            }
+
+        }
+    </script>
+</body>
+</html>
